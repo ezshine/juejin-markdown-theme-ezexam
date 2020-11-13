@@ -126,14 +126,27 @@ $line-space: 22px;
   }
 
   blockquote {
-    color: #666;
+    color: #f8f8f8;
     padding: 1px 23px;
     margin: 22px 0;
-    border-left: 4px solid #cbcbcb;
+    border-left: 30px solid #858585;
+    border-right: 1px solid #858585;
+    border-top: 1px solid #858585;
+    border-bottom: 1px solid #858585;
+    border-radius: 5px;
     background-color: #f8f8f8;
+    position: relative;
     &::after {
       display: block;
-      content: '';
+      content: '答案';
+      width:1px;
+      color: #fff;
+      position: absolute;
+      left:-20px;
+      top:50%;
+      transform: translateY(-50%);
+      line-height: 14px;
+      font-size: 12px;
     }
     & > p {
       margin: 10px 0;
